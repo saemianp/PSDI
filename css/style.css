@@ -1,0 +1,15 @@
+
+body { font-family: Arial; margin: 0; background: #f9f9f9; }
+header { background: #003366; color: white; padding: 1rem; text-align: center; }
+nav a { color: white; margin: 0 1rem; text-decoration: none; }
+.controls { margin: 1rem; text-align: center; }
+.map-container { display: flex; justify-content: center; position: relative; }
+.legend { position: absolute; right: 10px; top: 20px; background: white; border: 1px solid gray; padding: 10px; display: block; }
+.legend-color { display: inline-block; width: 20px; height: 10px; margin-right: 10px; }
+.normal { background: #f0f0f0; }
+.d0 { background: #ffffb2; }
+.d1 { background: #fecc5c; }
+.d2 { background: #fd8d3c; }
+.d3 { background: #f03b20; }
+.d4 { background: #bd0026; }
+section { margin: 2rem; }

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Global Drought Map</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="images/icon.png" />
+</head>
+<body>
+  <header>
+    <h1>Global Drought Probability Viewer</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#citation">How to Cite</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section class="controls">
+      <label for="date-select">Select Month:</label>
+      <select id="date-select" onchange="updateMap()">
+        <option value="2002_04">April 2002</option>
+<option value="2010_06">June 2010</option>
+<option value="2017_09">September 2017</option>
+<option value="2023_12">December 2023</option>
+<option value="2025_05">May 2025</option>
+      </select>
+      <button onclick="toggleLegend()">Toggle Legend</button>
+    </section>
+    <section class="map-container">
+      <img src="images/maps/2002_04.png" alt="Drought Map" id="drought-map">
+      <div id="legend" class="legend">
+        <h3>Most Probable Category</h3>
+        <ul>
+          <li><span class="legend-color normal"></span>Normal</li>
+          <li><span class="legend-color d0"></span>Abnormally Dry</li>
+          <li><span class="legend-color d1"></span>Moderate Drought</li>
+          <li><span class="legend-color d2"></span>Severe Drought</li>
+          <li><span class="legend-color d3"></span>Extreme Drought</li>
+          <li><span class="legend-color d4"></span>Exceptional Drought</li>
+        </ul>
+      </div>
+    </section>
+    <section id="about">
+      <h2>About This Project</h2>
+      <p>This global drought map visualizes the most probable drought category at each 0.5° grid based on TWSA data from GRACE and GRACE-FO.</p>
+      <p>Developed by the Institute of Geodesy, University of Stuttgart.</p>
+    </section>
+    <section id="citation">
+      <h2>How to Cite</h2>
+      <p>Please cite as: Saemian et al., "Probabilistic Drought Monitoring from GRACE(-FO)", Journal TBD, 2025.</p>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Dr. Peyman Saemian<br/>Institute of Geodesy, University of Stuttgart<br/><a href="mailto:peyman.saemian@gis.uni-stuttgart.de">peyman.saemian@gis.uni-stuttgart.de</a></p>
+    </section>
+  </main>
+  <script src="js/script.js"></script>
+</body>
+</html>
